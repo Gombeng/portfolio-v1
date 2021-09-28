@@ -15,6 +15,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	letter-spacing: 1px;
+	background: $Chinese-Black;
+	text-transform: uppercase;
 }
 
 ul {
@@ -30,14 +32,24 @@ a {
 }
 
 .container {
-	margin: 1rem;
+	margin: 0 2rem;
 }
 
-p,
-h1,
-h2,
-h3 {
-	color: $Midnight-Green;
+h1 {
+	font-size: 32px;
+	color: $Sunny;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+p {
+	font-size: 18px;
+	color: $Honeydew;
+	&.p2 {
+		font-size: 14px;
+	}
 }
 
 section {
@@ -50,12 +62,15 @@ section {
 
 button {
 	padding: 1rem 2rem;
-	background: $Midnight-Green;
 	border: none;
 	outline: none;
-	color: $Water;
 	border-radius: 0.2rem;
 	letter-spacing: 2px;
 	font-size: 1rem;
 	font-weight: 600;
+
+	&.cta {
+		background: $Sunny;
+		color: $Chinese-Black;
+	}
 }

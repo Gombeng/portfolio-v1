@@ -1,13 +1,14 @@
 @import './color';
 
-nav {
-	background-color: $Midnight-Green;
+header {
+	// background-color: $Chinese-Black;
+	background: $Deep-Moss-Green;
 	position: sticky;
 	top: 0;
 
-	.nav-container {
+	nav {
 		display: flex;
-		margin: 0 1rem;
+		margin: 0 2rem;
 		height: 8vh;
 		align-items: center;
 
@@ -23,7 +24,7 @@ nav {
 		}
 
 		a {
-			color: $Water-2;
+			// color: $Water-2;
 		}
 	}
 }
