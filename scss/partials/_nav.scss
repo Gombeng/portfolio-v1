@@ -1,0 +1,29 @@
+@import './color';
+
+nav {
+	background-color: $Midnight-Green;
+	position: sticky;
+	top: 0;
+
+	.nav-container {
+		display: flex;
+		margin: 0 1rem;
+		height: 8vh;
+		align-items: center;
+
+		.logo {
+			flex: 2;
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+
+		.nav-link {
+			flex: 1;
+			display: none;
+		}
+
+		a {
+			color: $Water-2;
+		}
+	}
+}

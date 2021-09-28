@@ -1,0 +1,16 @@
+@import './color';
+
+.home {
+	background: $Water-2;
+	background-image: url('../../image/bg-image.jpg');
+	background-size: cover;
+	background-position: 0 0;
+
+	h1 {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		margin-bottom: 1rem;
+	}
+}
