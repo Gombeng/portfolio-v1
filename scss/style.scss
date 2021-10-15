@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+// partial css
 @import './partials/color';
 @import './partials/nav';
 @import './partials/home';
+@import './partials/work';
 
 // global style here
 * {
@@ -11,10 +13,12 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	letter-spacing: 1px;
+	font-family: 'Poppins', sans-serif;
 	background: $Chinese-Black;
 	text-transform: uppercase;
 }
@@ -35,23 +39,45 @@ a {
 	margin: 0 2rem;
 }
 
-h1 {
-	font-size: 32px;
+// text styling
+h1,
+h2,
+h3 {
 	color: $Sunny;
 }
 
+h1 {
+	font-size: 36px;
+}
+
 h2 {
-	font-size: 28px;
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
 }
 
 p {
 	font-size: 18px;
 	color: $Honeydew;
-	&.p2 {
-		font-size: 14px;
-	}
 }
 
+.p2 {
+	font-size: 14px;
+}
+
+.stroke {
+	color: transparent;
+	-webkit-text-stroke: 2px $Sunny;
+	letter-spacing: 6px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+// element styling
 section {
 	min-height: 100vh;
 	display: flex;
@@ -61,16 +87,36 @@ section {
 }
 
 button {
-	padding: 1rem 2rem;
+	padding: 0.8rem 1.2rem;
 	border: none;
 	outline: none;
 	border-radius: 0.2rem;
-	letter-spacing: 2px;
-	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 800;
 
 	&.cta {
 		background: $Sunny;
 		color: $Chinese-Black;
+		font-size: 14px;
 	}
+}
+
+.body-link {
+	color: inherit;
+	text-decoration: underline;
+}
+
+// margin
+.mb-1 {
+	margin-bottom: 1rem;
+}
+.mb-2 {
+	margin-bottom: 2rem;
+}
+.mb-4 {
+	margin-bottom: 4rem;
+}
+
+// max-width
+.max-width-1 {
+	max-width: 300px;
 }

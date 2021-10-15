@@ -1,0 +1,24 @@
+@import '../partials/color';
+
+.work {
+	.grid-item {
+		img {
+			border-radius: 0.3rem;
+			border: 0.3rem solid $Sunny;
+			overflow: hidden;
+			width: 100%;
+		}
+	}
+
+	.cta {
+		background: $Honeydew;
+	}
+
+	ul {
+		justify-content: unset;
+		.capsul {
+			padding: 1rem;
+			color: $Sunny;
+		}
+	}
+}
