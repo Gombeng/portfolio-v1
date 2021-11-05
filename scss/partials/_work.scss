@@ -17,8 +17,15 @@
 	ul {
 		justify-content: unset;
 		.capsul {
-			padding: 1rem;
 			color: $Sunny;
+			margin: 0 0.3rem;
+			padding: 0.3rem 0.5rem;
+			border: 1px solid $Sunny;
+			border-radius: 0.3rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
 		}
 	}
 }
